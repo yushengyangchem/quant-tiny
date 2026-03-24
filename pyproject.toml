@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "quant-tiny"
+dynamic = ["version"]
+description = "A tiny & lightweight quantitative trading framework for learning"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = [
+  "quant",
+  "trading",
+  "finance",
+  "backtesting",
+  "algorithmic-trading",
+  "learning",
+]
+authors = [{ name = "yushengyangchem", email = "yushengyangchem@gmail.com" }]
+maintainers = [
+  { name = "yushengyangchem", email = "yushengyangchem@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Office/Business :: Financial",
+  "Topic :: Scientific/Engineering",
+  "Intended Audience :: Education",
+  "Environment :: Console",
+]
+
+[project.urls]
+Homepage = "https://github.com/yushengyangchem/quant-tiny"
+Issues = "https://github.com/yushengyangchem/quant-tiny/issues"
+Documentation = "https://github.com/yushengyangchem/quant-tiny#readme"
+
+[tool.hatch.version]
+path = "src/quant_tiny/__init__.py"
